@@ -85,61 +85,95 @@
             <nav class="navbar navbar-expand-sm navbar-default">
                 <div id="main-menu" class="main-menu collapse navbar-collapse">
                     <ul class="nav navbar-nav" id='nky'>
-                        <li name = 'mymain'class='active'>
-                            <a href="index-content.html" target="myiframe"><i class="menu-icon fa fa-laptop"></i>我的主页</a>
+                      
+                        <li class="nav-item menu-item">
+                            <a class="nav-link"  href="index-content.html" target="myiframe"><i class="menu-icon fa fa-laptop"></i>我的主页</a>
                         </li>
-                        <li  class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> <i class="menu-icon fa fa-group"></i>用户管理</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><a href="managers.html" target="myiframe">管理员管理</a></li>
-                                <li><a href="clients.html" target="myiframe">客户管理</a></li>
-                                <li><a href="surveyor.html" target="myiframe">质检员管理</a></li>   
-                            </ul>
+
+                        <li class="nav-item menu-item-has-children">
+                            <a class="nav-link" data-toggle="collapse" href="#bill" aria-haspopup="true"
+                                aria-expanded="false" aria-controls="bill">
+                                <i class="menu-icon fa fa-file-text"></i>
+                                订单管理
+                            </a>
+                            <div class="collapse" id="bill">
+                                <ul class="nav flex-column sub-menu">
+                                    <li><a href="orders-checking.html" target="myiframe">最近验货订单</a></li>
+                                    <li><a href="orders-unfinished.html" target="myiframe">未完成订单</a></li>
+                                    <li><a href="orders-finished.html" target="myiframe">已完成订单</a></li>
+                              
+                                </ul>
+                            </div>
                         </li>
-                        <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> <i class="menu-icon fa fa-file-text-o"></i>订单管理</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><a href="orders-checking.html" target="myiframe">最近验货订单</a></li>
-                                <li><a href="orders-unfinished.html" target="myiframe">未完成订单</a></li>
-                                <li><a href="orders-finished.html" target="myiframe">已完成订单</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"> <i class="menu-icon fa fa-file-text-o"></i>报告管理</a>
-                                <ul class="sub-menu children dropdown-menu">
+
+                        <li class="nav-item menu-item-has-children">
+                            <a class="nav-link" data-toggle="collapse" href="#report" aria-haspopup="true"
+                                aria-expanded="false" aria-controls="bill">
+                                <i class="menu-icon fa fa-file-text"></i>
+                                报告管理
+                            </a>
+                            <div class="collapse" id="report">
+                                <ul class="nav flex-column sub-menu">
                                     <li><a href="report-unprocess.html" target="myiframe">未处理报告</a></li>
                                     <li><a href="report-finished.html" target="myiframe">已处理报告</a></li>
                                 </ul>
-                            </li>
-                            <li class="menu-item-has-children dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"> <i class="menu-icon fa fa-file-text-o"></i>评价管理</a>
-                                    <ul class="sub-menu children dropdown-menu">
-                                        <li><a href="unevaluation.html" target="myiframe">未评价订单</a></li>
-                                        <li><a href="evalution.html" target="myiframe">已评价订单</a></li>
-                                        <li><a href="complain.html" target="myiframe">已投诉订单</a></li>
-                                    </ul>
-                                </li>
-    
-                        <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> <i class="menu-icon fa fa-money"></i>财务管理</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><a href="finance.html" target="myiframe">财务统计</a></li>
-                                <li><a href="payment.html" target="myiframe">充值统计</a></li>
-                                <li><a href="refund.html" target="myiframe">退款处理</a></li>
-                                <li><a href="chart.html" target="myiframe">财务报表</a></li>
-                            </ul>
+                            </div>
                         </li>
-                        <li>
-                            <a href="personal.html" target="myiframe"> <i class="menu-icon fa fa-user"></i>我的账户 </a>
-                        </li> 
-                        <li>
-                            <a href="mynews.html" target="myiframe"> <i class="menu-icon fa fa-cogs"></i>系统配置 </a>
-                        </li>   
+
+
+                        <li class="nav-item menu-item-has-children">
+                            <a class="nav-link" data-toggle="collapse" href="#evalution" aria-haspopup="true"
+                                aria-expanded="false" aria-controls="bill">
+                                <i class="menu-icon fa fa-file-text-o"></i>
+                                评价管理
+                            </a>
+                            <div class="collapse" id="evalution">
+                                <ul class="nav flex-column sub-menu">
+                                    <li><a href="unevaluation.html" target="myiframe">未评价订单</a></li>
+                                    <li><a href="evalution.html" target="myiframe">已评价订单</a></li>
+                                    <li><a href="complain.html" target="myiframe">已投诉订单</a></li>
+                               </ul>
+                            </div>
+                        </li>
+
+                        
+                        <li class="nav-item menu-item-has-children">
+                            <a class="nav-link" data-toggle="collapse" href="#finance" aria-haspopup="true"
+                                aria-expanded="false" aria-controls="bill">
+                                <i class="menu-icon fa fa-money"></i>
+                                财务管理
+                            </a>
+                            <div class="collapse" id="finance">
+                                <ul class="nav flex-column sub-menu">
+                                    <li><a href="finance.html" target="myiframe">财务统计</a></li>
+                                    <li><a href="payment.html" target="myiframe">充值统计</a></li>
+                                    <li><a href="refund.html" target="myiframe">退款处理</a></li>
+                                    <li><a href="chart.html" target="myiframe">财务报表</a></li>
+                               </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item menu-item-has-children">
+                            <a class="nav-link" data-toggle="collapse" href="#managers" aria-haspopup="true"
+                                aria-expanded="false" aria-controls="bill">
+                                <i class="menu-icon fa fa-group"></i>
+                                管理员管理
+                            </a>
+                            <div class="collapse" id="managers">
+                                <ul class="nav flex-column sub-menu">
+                                    <li><a href="managers.html" target="myiframe">管理员管理</a></li>
+                                    <li><a href="clients.html" target="myiframe">客户管理</a></li>
+                                    <li><a href="surveyor.html" target="myiframe">质检员管理</a></li>   
+                               </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link"  href="personal.html" target="myiframe"> <i class="menu-icon fa fa-user"></i>我的账户 </a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link"  href="mynews.html" target="myiframe"> <i class="menu-icon fa fa-cogs"></i>系统配置 </a>
+                </li>
+                   
+                       
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
